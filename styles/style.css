@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --sectionColor:#EDF7FA;
+    --sectionPadding:6rem 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 strong{
+    color: #21243D;
+}
+
+p{
+    font-size: 1rem;
+    line-height: 1.9rem;
+}
+
+p, span, label, input, textarea, li {
+    color: #636678;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main-container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:1200px) {
+    .main-container{
+        width: 90%;
+    }
+}
+
+.nav{
+    display: flex;
+    justify-content: end;
+    padding: 2rem 0;
+}
+
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    color: #21243D;
+    align-items: center;
+}
+
+.burger div{
+    width: 25px;
+    height: 2px;
+    background-color: #21243D;
+    margin: 7px;
+    transition: all 0.3s;
+    z-index: 99;
+}
+
+.burger{
+    display: none;
+    z-index: 99;
+    position: fixed;
+    top: 24px;
+    right: 35px;
+
+}
+
+.btn{
+    padding: 1rem 1.5rem;
+    background: #4E5DDC;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-top: 1rem;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+    font-family: "Roboto";
+    font-size: 1rem;
+}
+
+.btn:hover{
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+#hero{
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.hero-right img{
+    width: 80%;
+    border-radius: 50px;
+}
+
+.hero-right{
+    display: flex;
+    justify-content: center;
+}
+
+.pre-title{
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    color: #636678;
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: .9rem;
+}
+
+.pre-title::before{
+    content: "";
+    width: 30px;
+    height: 1px;
+    background:#636678;
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 50%;
+}
+
+.hero-name{
+    font-size: 3rem;
+    font-weight: 700;
+    margin: .5rem 0 1rem;
+}
+
+.hero-name span{
+    color: #4E5DDC;
+}
+
+#education{
+    background-color: var(--sectionColor);
+    padding: var(--sectionPadding);
+}
+
+.educations .pre-title{
+    margin: 0 auto;
+}
+
+.education-title{
+    text-align: center;
+}
+
+.section-title{
+    margin: 1rem 0 4rem;
+    font-size: 2rem;
+}
+
+.grid-2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+}
+
+.grid-3{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 3rem;
+}
+
+.education{
+    padding: 3rem 2rem;
+    text-align: center;
+    background: white;
+    border-radius: .7rem;
+}
+
+.education h4{
+    margin: 1.5rem 0;
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.education-icon{
+    background: #f5f3fe;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem 1.3rem;
+    border-radius: 0.5rem;
+}
+
+.education-icon svg{
+    fill: #4E5DDC;
+}
+
+#skills{
+    padding: var(--sectionPadding);
+}
+
+.skill{
+    padding:2.5rem 2rem;
+    text-align: center;
+    background: white;
+    border: .1rem solid #E0E0E0;
+    border-radius: .7rem;
+}
+
+.skill-name{
+    margin: 2rem 0 0;
+    font-weight: 700;
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+.skill-cover{
+    width: fit-content;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.skill-cover img{
+    width: 95%;
+    height: 80%;
+}
+
+#projects{
+    background: var(--sectionColor);
+    padding: var(--sectionPadding);
+}
+
+.projects .pre-title{
+    margin: 0 auto;
+}
+
+.projects-title{
+    text-align: center;
+}
+
+.project{
+    padding:2.5rem 2rem;
+    overflow: hidden;
+    text-align: center;
+    background: white;
+    border-radius: .7rem;
+}
+
+.project-title{
+    margin: 2rem 0 0;
+    font-weight: 700;
+    font-size: 1.5rem;
+    align-items: center;
+    display: flex;
+    justify-content: start;
+}
+
+.project-language{
+    display: flex;
+    gap: 1rem;
+    margin: 0.8rem 0 1rem;
+}
+
+.project-language div{
+    font-size: 0.86rem;
+    background: #EDF7FA;
+    color: #636678;
+    padding: 0.4rem 1rem;
+    border-radius: 1.5rem;
+}
+
+.project-cover{
+    width: auto;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-cover img{
+    height: 80%;
+}
+
+.project-desc{
+    text-align: start;
+}
+
+.project-desc p{
+    font-size: 0.9rem;
+}
+
+#contact{
+    padding: var(--sectionPadding);
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+}
+
+.contact-form div{
+    margin-bottom: 1.4rem;
+}
+
+.contact-form input, .contact-form textarea{
+    width: 100%;
+    padding: .75rem;
+    font-family: "Roboto", sans-serif;
+    background: #fbfbfb;
+    border: 1px solid #f1f1f1;
+    border-radius: .5rem;
+    resize: none;
+}
+
+.contact-form input::placeholder, .contact-form textarea::placeholder{
+    color: #9d9fa1;
+}
+
+.contact-form input:focus, .contact-form textarea:focus{
+    outline: none;
+    border: 1px solid #7d7d7d;
+}
+
+.btn-submit{
+    padding: 0.8rem 1rem;
+    background: #4E5DDC;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-top: 1rem;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+    font-family: "Roboto";
+    font-size: 1rem;
+}
+
+.btn-submit:hover{
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+.contact-item{
+    display: flex;
+    gap: 1.5rem;
+    margin: 1.5rem;
+    align-items: center;
+}
+
+.contact-item-icon{
+    background: #f5f3fe;
+    width: 53px;
+    padding: .7rem 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-item-icon{
+    fill: #4E5DDC;
+}
+
+footer{
+    padding: 4rem 0;
+    background: #fbfbfb;
+    text-align: center;
+}
+
+.footer-icon{
+    margin-bottom: 1rem;
+}
+
+.footer-icon a{
+    margin: 0 0.5rem;
+}
+
+.footer-icon svg{
+    fill: #3e3f40;
+}
+
+.footer-icon svg:hover{
+    fill: #000000;
+}
